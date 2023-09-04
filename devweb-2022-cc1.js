@@ -37,7 +37,7 @@ function checkGuess() {
   let userGuess = $numUsr.value;
   if (isNaN(userGuess)) {
     $output.innerHTML += '<br>'+"Veuillez entrer un nombre valide.";
-    
+
   } else {
     nbGuesses++;
     if (userGuess == secretNumber) {
@@ -62,7 +62,6 @@ $startBtn.addEventListener("click", launchGame);
 // Ajoute une image de vache sur la page
 function addCow(evt) {
   
-
   console.debug(evt.x, evt.y);
   const cowImage = document.createElement("img");
   cowImage.src = "https://upload.wikimedia.org/wikipedia/commons/3/30/Cowicon.svg";
